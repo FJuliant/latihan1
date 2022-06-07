@@ -1,0 +1,455 @@
+/****************** F O N T  **********************/
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('../font/League_Gothic-webfont.eot');
+    src: url('../font/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/League_Gothic-webfont.woff') format('woff'),
+         url('../font/League_Gothic-webfont.ttf') format('truetype'),
+         url('../font/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Source';
+    src: url('../font/SourceSansPro-Light-webfont.eot');
+    src: url('../font/SourceSansPro-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/SourceSansPro-Light-webfont.woff') format('woff'),
+         url('../font/SourceSansPro-Light-webfont.ttf') format('truetype'),
+         url('../font/SourceSansPro-Light-webfont.svg#SourceSansProLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ethno';
+    src: url('../font/ethnocentric_rg-webfont.eot');
+    src: url('../font/ethnocentric_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/ethnocentric_rg-webfont.woff') format('woff'),
+         url('../font/ethnocentric_rg-webfont.ttf') format('truetype'),
+         url('../font/ethnocentric_rg-webfont.svg#ethnocentricregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*  SLIDE */
+
+
+
+
+
+/********************* R E S E T *************************/
+*{ 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	border: none;
+	border-radius: 3px;
+}
+
+a{							/*  LINK  */
+	color: #fff;			
+	text-decoration: none;	
+	text-shadow: none;
+}
+a:hover{
+	color: #B82924;
+}
+p{
+	margin-bottom: 8px;
+}
+::selection {
+       background-color: #B82924; /* WARNA SELECT YANG DI BLOCK  */
+       color: #fff; } /*  WARNA SETELAH DI BLOCK  */
+
+/************** T A M P I L A N ***************/
+#wrapper{
+	width: 950px; 					
+	margin: 16px auto;  			
+	background-color: #121212;	   /*  BACKGROUND BUNGKUSAN  */
+	padding: 20px 20px;             /*  KETEBALAN BUNGKUSAN  */
+	box-shadow: 0 4px 6px #000;   
+}
+
+body{
+	background: url('../images/bg.png') repeat; /* INI ADALAH BACGROUND IMAGE WEBSITE */
+	font-family: Source, Tahoma, sans-serif;    /* INI ADALAH FONT DEFAULT WEBSITE */
+	color: #fff; 							   /* INI ADALAH WARNA FONT */
+	font-size: 15px;							/* INI ADALAH UKURAN FONT*/
+	text-shadow: 1px 1px 0px #000;			   /* INI ADALAH BAYANGAN TEXT*/
+}
+#srt{
+	color: #f9f9f9;
+	display: block;						
+	float: right;
+	position: absolute;					
+	top: 14px; 							
+	left: 180px;						
+	text-shadow: 1px 1px 0px #000;	   /*  TEXT BAYANGAN JIKA TIDAK DI PAKAI TIDAK APA APA*/
+	font-size: 36px;					/*  FONT SIZE */
+	font-style: italic;					/*  UNTUK MEMIRINGKAN FONT  */
+	font-family: ethno, sans-serif;		/*  BENTUK FONT  */
+	font-weight: normal;
+}
+#ii{
+	font-size: 65px;						 /*  SIZE  */
+	font-family: LeagueGothic, sans-serif;
+	font-weight: bold;
+	position: absolute;						 /*  UNTUK POSISI ii DI BAGIAN UAS MANA*/
+	left: 169px;							 /*  POSISI ii  */
+	top: -3px;								 /*  KETINGGIAN ii  */
+	color: #b82924;							 /*  WARNA FONT ii  */
+	display: block;							 /*  UNTUK POSISI SEJAJAR  */
+	float: right;
+	text-shadow: none;
+	font-style: italic;
+	letter-spacing: 2px;					/*  UKURAN SPASI  */
+}
+
+/************* L O G O   &  N A V   B A R  ****************/
+header h1{
+	font-family: LeagueGothic, Impact, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	text-shadow: 1px 1px 0 #000;
+	position: relative;
+	width: 300px;
+	margin-bottom: 2px;
+}
+header h2{
+	font-size: 16px;
+	font-weight: normal;
+	font-family: LeagueGothic, sans-serif;
+	width: 170px;
+	text-shadow: 1px 1px 0 #000;
+	text-transform: uppercase;
+}
+#tagline{
+		margin-top: -8px;
+}		
+#logo, nav, nav li{
+	display: inline-block;
+	vertical-align: top;
+
+}
+#logo{
+	width: 270px;
+}
+nav a {
+	color: #fff;
+	font-family: LeagueGothic, sans-serif;
+	text-decoration: none;
+	font-size: 1.5em;
+	margin-left: 25px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0px #000;
+}
+
+nav{
+	margin: 18px 45px 0 0;
+	float: right;
+}
+header{
+	margin-bottom: 25px;
+}
+#home a#homenav, #blog a#blognav, #contact a#contactnav{
+	color: #b82924;
+}
+/*************** B A N N E R    S T Y L E ******************/
+#banner{
+	position: relative;
+	margin-bottom: 30px;
+}
+#banneri{
+	position: absolute;
+	bottom: 15%;
+	left: 0;
+	width: 500px;
+	background-color: rgba(0,0,0,.8);
+	padding: 5px 10px;
+}
+#banner img{
+	box-shadow: 0 4px 6px #000;
+}
+#banner h1{
+	font-family: LeagueGothic, Impact, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0px #000;
+	display: inline;
+}
+#banner .rm{
+	position: absolute;
+	color: #000;
+	background-color: #fff; 
+	padding: 4px 8px;
+	right: 3%;
+	bottom: -10%;
+}
+
+/************* H O M E    C O N T E N T *******************/
+#line h1{
+	font-family: LeagueGothic, Impact, sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #f8f8f8;
+	text-shadow: 2px 2px 0 #000;
+	text-align:  center;
+}
+#line h1, .dline{
+	display: inline-block;
+	margin: 0 0 0 5px;
+}
+#line{
+		margin-left: 50px;
+		padding: 30px;
+}
+.dline{
+	width: 312px;
+	height: 3px;
+	background: url('../images/bgdline.png'); /*  GARIS  */
+	margin-bottom: 10px;
+}
+#ourserv article{
+	width: 275px;
+	display: inline-block;
+	*display: inline;
+	zoom:1;
+	vertical-align: top;
+	margin: 0 38px 0 0;
+}
+#ourserv article h1, #latestp article h1{
+	font-family: LeagueGothic, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+.lastarticle{
+	margin:0;
+}
+#ourserv{
+	margin: 8px 0 15px 20px;
+	width: 100%;
+}
+#ourserv img, #latestp img{
+	margin-bottom: 5px;
+    box-shadow: 0 4px 6px #000;
+}
+.rm{											/*  READ MORE / SELENGKAPNYA / KIRIM DLL  */
+	color: #121212;						   /*  COLOR FONT  */
+	background-color: #ffffff;				   /*  BACKGROUNDNYA  */
+	padding: 1px 4px;							/*  KETEBALAN  */
+	display:block;
+	width: 75px;
+	margin-top: 5px;
+	box-shadow: 0px 0px 3px #000;
+	font-family: LeagueGothic, sans-serif;		/*  BENTUK FONTNYA  */
+	text-transform: uppercase; 					/*  FONT */
+	font-size: 18px;
+	border-radius: 2px;							/*  BERFUNGSI UNTUK MENUMPULKAN SISI  */
+}
+.rm:hover{
+	background-color: #B82924;		/*  JIKA KURSOR DI DEKATKAN  */
+	color: #121212;				/*  WARNA FONT JIKA DI DEKATKAN */
+}	
+
+#sline h1{
+	font-family: LeagueGothic, Impact, sans-serif; /*  FONT H1 */
+	font-weight: normal;							
+	font-size: 30px;								/*  FONT SIZE  */
+	text-transform: uppercase;
+	color: #f5f5f5;
+	text-shadow: 2px 2px 0 #000;
+	text-align:  center;
+}
+#sline h1, .sdline{ 	
+	display: inline-block;  /*POSISI GARIS*/
+	margin: 0 0 0 10px;		/* UKURAN JARAK TEXT*/
+}
+#sline{                         /* GARIS DI BERITA LAINNYA GARIS KE 2*/
+	margin: 20px 0 15px 125px; /* MENGATUR TATA LETAK*/
+}
+.sdline{
+	width: 255px; /* MENGATUR PANJANG GARIS KEDUANYA*/
+	height: 2px;
+	background: url('../images/bgdline.png') ; /*FOTO GARIS */
+	margin-bottom: 10px; /*POSISI GARIS ATAS ATAU BAWAH*/
+}
+#latestp article{ /*TAMPILAN BERITA TERKINI SEPUTAR TI*/
+	width: 210px; /* JARAK ANTAR ARTICLE */
+	display: inline-block; /* UNTUK MENJAJARKAN ARTICLE */
+	/* display: inline; */ /* JIKA INGIN TAMPILANNYA KEBAWAH MAKAN BISA AKTIFKAN */
+	margin-right: 20px; /* MEMBUAT TAMPILAN MENJADI LEBIH KANAN */
+}
+#latestp{
+	margin-left: 20px; /* SEBALIKNYA  */
+}
+
+/************* B L O G    S T Y L E  &   C O N T A C T   P A G E *****************************/
+#articles, #sidebar{
+	display: inline-block;
+	vertical-align: top;
+	*display: inline;
+	zoom:1;
+}
+#blog section, #contact section{
+	margin: 30px 0 0 10px;
+}
+#sidebar, #contat #sidebar{
+	width: 280px;
+	margin:0 0 0 55px;
+}
+#articles, #contactpost{
+	width: 600px;
+	margin:0 0 40px 0;
+}
+#blog li, #contact li{
+	list-style-type: square;
+}
+#blog article{
+	width: 580px;
+	margin-bottom: 40px;
+}
+#blog footer, #contact footer{
+	margin-top: 0px;
+}
+#blog article h1 a{
+	font-family: LeagueGothic, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 22px;
+	text-shadow: 1px 1px 0 #000;
+	word-spacing: 2px;
+	margin-bottom: 5px;
+}
+#blog article h2{
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: 0.2px;
+	margin-bottom: 12px;
+	background-color: #0a0a0a;
+	padding: 4px 8px 4px 8px;
+	font-family: source, sans-serif;
+	text-transform: none;
+}
+#blog article h2 a:hover{
+	text-decoration: underline;
+}
+#blog article img{
+	box-shadow: 0 4px 6px #000;
+	margin-bottom: 10px;
+}
+#sidebar h1, #contact #sidebar h1{
+	font-family: LeagueGothic, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 22px;
+	text-shadow: 1px 1px 0 #000;
+	word-spacing: 2px;
+	margin-bottom: 4px;
+}
+#sidebar li, #contact #sidebar li {
+	margin:0 0 4px 25px;
+	color: #b82924;
+}
+#sidebar li:hover, #contact #sidebar li:hover{
+	margin-left: 30px;
+}
+#sidebar li a:hover, #contact #sidebar li a:hover{
+	text-decoration: underline;
+}
+#blog aside, #contact #sidebar aside{
+	margin: 0 0 20px 0;
+}
+#cat, #archives, #contact #sidebar  #cat, #contact #sidebar #archives{
+	width: 130px;
+	display: inline-block;
+	vertical-align: top;
+	*display: inline;
+	zoom:1;
+}
+/* SINGLE POST STYLE  and CONTACT PAGE with SIDEBAR*/
+#singlepost, #sidebar, #contactpost{
+	display: inline-block;
+	vertical-align: top;
+	*display: inline;
+	zoom:1;
+}
+#singlepost{
+	margin-right: 20px;
+}
+/* CONTACT PAGE */
+#contactpost p{
+	margin-bottom: 25px;
+}
+input[type="user"]{
+	display: block;
+	float: right;
+	height: 20px;
+	width: 280px;
+	padding-left: 3px;
+}
+input[type="email"]{
+	display: block;
+	float: right;
+	height: 20px;
+	width: 280px;
+	padding-left: 3px;
+}
+#message{
+	display: block;
+	float: right;
+	width: 280px;
+	height: 130px;
+	padding-left: 3px;
+}
+input[type="submit"]{
+	display: block;
+	float: right; 							/* TPOSISI TOMBOL */
+	font-family: LeagueGothic, sans-serif;	/* BENTUK FONT  */
+	font-size: 18px;						
+	text-transform: uppercase; 				/* BENTUK FONT */
+	border: 2px outset #b2b2b2;		   /* BORDER / PINGGIRAN*/
+	color: #121212;
+
+}
+input, #message{
+	margin-right: 180px; 				/* POSISI ISI */
+	background-color: #f8f8f8;		   /* BACKGROUND SUMBIT*/
+	border: 2px inset #000;
+	border-radius: 3px;					/*  UNTUK MENUMPULKAN  */
+}
+input[type="submit"]:hover{ 
+	cursor:pointer; 				/* UNTUK MENGUBAH KURSOR MENJADI PETUNJUK */
+}
+input[type="submit"]:active{
+	color: #b82924;			/* WARNA SETELAH DI KLIK */
+	border: 2px inset #b82924;
+}
+
+/*************  B E R I T A  P O S T    S T Y L E*********************/
+.right{
+	float: right; /* MEMBUAT FOTO MENJADI SEBELAH KANAN YANG BERADA DI HALAMAN BERITA */
+	margin-left: 10px; /* MEMBUAT ISI BERITA SEMAKIN KIRI */
+}
+.left{
+	float: left; /* MEMBUAT FOTO ISI BERITA DI SEBELAH KIRI */
+	margin-right: 10px; /* MEMBUAT ISI BERITA SEMAKIN KANAN*/
+}
+.center{				/*  UNTUK BERITA DI CENTER */
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+}
+
+/************* F O O T E R    S T Y L E *************************/
+
+footer{
+	margin-top: 30px;
+	text-align: right;
+	padding: 15px;
+}
